@@ -1,11 +1,11 @@
 import pandas as pd
 
-# Read the csv file in
+# Reads csv
 df = pd.read_csv('Resources/cities.csv')
 
-# Save to file
+# Save to html file
 df.to_html('data.html', index=False)
 
-# Assign to string
+# save html data in a variable
 table = df.to_html()
 print(table)
